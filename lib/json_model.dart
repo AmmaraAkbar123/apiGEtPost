@@ -13,7 +13,8 @@ class ProductList {
 
   factory ProductList.fromJson(Map<String, dynamic> json) {
     var productList = json['products'] as List;
-    List<Product> products = productList.map((product) => Product.fromJson(product)).toList();
+    List<Product> products =
+        productList.map((product) => Product.fromJson(product)).toList();
 
     return ProductList(
       products: products,
